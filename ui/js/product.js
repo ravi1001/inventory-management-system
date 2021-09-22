@@ -13,7 +13,7 @@ $(document).ready(function () {
   function productList() {
     // Call Web API to get a list of products
     $.ajax({
-      url: 'http://a73e3537f79c1490e8982e58c5ebf424-bc22ad9319137302.elb.us-east-1.amazonaws.com/product/getall',
+      url: 'http://aafb02a9d8d234b60bd0433a89e62eb7-2063228238.us-east-1.elb.amazonaws.com/product/getall',
       type: 'POST',
       dataType: 'json',
       success: function (products) {
@@ -88,7 +88,7 @@ $(document).ready(function () {
   function productAdd(product) {
     // Call Web API to add a new product
     $.ajax({
-      url: "http://a73e3537f79c1490e8982e58c5ebf424-bc22ad9319137302.elb.us-east-1.amazonaws.com/product/new",
+      url: "http://aafb02a9d8d234b60bd0433a89e62eb7-2063228238.us-east-1.elb.amazonaws.com/product/new",
       type: 'POST',
       contentType: "application/json;charset=utf-8",
       data:JSON.stringify(product),
